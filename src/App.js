@@ -16,7 +16,7 @@ function App() {
   })
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ mt: 10, p: 2 }}>
+      <Box sx={{ mt: 5, p: 2 }}>
         <CssBaseline />
         <Router>
           <Navbar />

@@ -15,7 +15,7 @@ const CountryCard = ({ country }) => {
                     lg: 280,
                     md: 250,
                     sm: 350,
-                    xs: 450
+                    xs: 350
                 },
                 minHeight: 300,
                 margin: {

@@ -32,8 +32,15 @@ const Search = () => {
                 width: {
                     xl: 300,
                     lg: 300,
-                    sm: 250,
-                    xs: 230
+                    sm: '100%',
+                    xs: '100%'
+                },
+                marginBottom: {
+                    sm: '20px',
+                    xs: '20px',
+                    md: '0px',
+                    lg: '0px',
+                    xl: '0px'
                 }
             }}
             renderInput={(params) => <TextField

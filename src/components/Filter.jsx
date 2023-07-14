@@ -4,9 +4,14 @@ import Search from './Search'
 import SelectFilter from './SelectFilter'
 
 const style = {
-
     margin: '30px 0',
-    display: 'flex',
+    display: {
+        xl: 'flex',
+        lg: 'flex',
+        md: 'flex',
+        sm: 'block',
+        xs: 'block'
+    },
     alignItems: 'center',
     justifyContent: 'space-between',
     mr: 2

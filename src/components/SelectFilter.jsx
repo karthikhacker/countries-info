@@ -25,7 +25,7 @@ const SelectFilter = () => {
                 lg: 200,
                 md: 200,
                 sm: 200,
-                xs: 200
+                xs: 150
             }
         }}>
             <FormControl fullWidth size='small'>

@@ -29,6 +29,17 @@ const Navbar = () => {
                         color="inherit"
                         startIcon={darkMode ? <LightMode /> : <DarkModeIcon />}
                         onClick={handleMode}
+                        sx={{
+                            fontSize: {
+                                xs: '0.8em',
+                                sm: '0.8em',
+                                md: '1em',
+                                lg: '1em',
+                                xl: '1em'
+                            },
+                            fontFamily: 'Nunito',
+                            fontWeight: 400
+                        }}
                     >
                         {darkMode ? 'Light mode' : 'Dark Mode'}
                     </Button>
