@@ -18,9 +18,17 @@ const CountryInfo = () => {
         return <Loading />
     }
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{
+            marginTop: {
+                xs: '2em',
+                sm: '2em',
+                md: '1.8em',
+                lg: '2em',
+                xl: '2em'
+            }
+        }} >
             <FetchCountry country={country} />
-        </Grid>
+        </Grid >
 
     )
 }

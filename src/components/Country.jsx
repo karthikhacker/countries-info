@@ -16,7 +16,16 @@ const Country = ({ name, f, cc, region, tz, mp, bd }) => {
     return (
         <>
             <Grid item xl={4} lg={4} md={6} sm={12} xs={12}  >
-                <Box sx={{ width: '400px' }}>
+                <Box sx={{
+                    width: {
+                        xs: '300px',
+                        sm: '450px',
+                        md: '400px',
+                        lg: '450px',
+                        xl: '450px'
+                    }
+
+                }}>
                     <img src={f} style={{ width: '100%' }} />
                 </Box>
             </Grid>

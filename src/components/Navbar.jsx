@@ -13,7 +13,7 @@ const Navbar = () => {
         dispatch(changeTheme(!darkMode));
     }
     return (
-        <Box  >
+        <Box>
             <AppBar color="inherit" position='fixed'>
                 <Toolbar >
                     <Typography variant="h6" sx={{
