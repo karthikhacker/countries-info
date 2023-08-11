@@ -10,9 +10,7 @@ const Search = () => {
     const [value, setValue] = useState("");
     const dispatch = useDispatch();
     const navigate = useNavigate()
-    const options = countries?.map(c => {
-        return c.name.common
-    })
+
     useEffect(() => {
         if (value !== null && value !== "") {
             dispatch(countrySearchPending(value))
@@ -26,7 +24,8 @@ const Search = () => {
             freeSolo
             value={value}
             onChange={(event, newValue) => setValue(newValue)}
-            options={options}
+            data-testid="auto-complete"
+            options={countries?.map(c => c.name.common)}
             isOptionEqualToValue={(option, value) => option.name === value.name}
             sx={{
                 width: {

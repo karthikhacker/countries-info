@@ -8,9 +8,10 @@ import { changeTheme } from '../features/themeSlice';
 const Navbar = () => {
     const dispatch = useDispatch();
     const { darkMode } = useSelector(state => state.themes);
-
+    console.log(darkMode);
     const handleMode = () => {
         dispatch(changeTheme(!darkMode));
+
     }
     return (
         <Box>
@@ -41,7 +42,7 @@ const Navbar = () => {
                             fontWeight: 400
                         }}
                     >
-                        {darkMode ? 'Light mode' : 'Dark Mode'}
+                        {darkMode ? 'Light Mode' : 'Dark Mode'}
                     </Button>
                 </Toolbar>
             </AppBar>

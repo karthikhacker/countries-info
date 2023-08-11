@@ -32,6 +32,7 @@ const SelectFilter = () => {
                 <InputLabel id="demo-simple-select-label">Region</InputLabel>
                 <Select
                     labelId="demo-simple-select-label"
+                    inputProps={{ 'data-testid': 'select' }}
                     id="demo-simple-select"
                     label="Regions"
                     value={regionName}

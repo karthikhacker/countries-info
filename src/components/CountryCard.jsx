@@ -3,10 +3,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CountryCard = ({ country }) => {
-    // console.log(country)
+    console.log(country)
     const countryOrder = country?.name?.common.split("").sort()
     // console.log(countryOrder)
-    const code = country?.altSpellings[0];
+    const code = country?.altSpellings?.[0];
     return (
         <Grid lg={3} sm={6} xs={12} md={4} item >
             <Card sx={{
@@ -25,7 +25,7 @@ const CountryCard = ({ country }) => {
                 },
                 fontFamily: 'Nunito'
 
-            }}>
+            }} >
                 <Link to={`/country/${code}`}>
                     <CardMedia
                         component="img"
@@ -52,7 +52,7 @@ const CountryCard = ({ country }) => {
                         },
                         fontWeight: '700'
                     }}>
-                        {country?.name.common}
+                        {country?.name?.common}
                     </Typography>
                     <Typography variant='caption' sx={{
                         fontSize: '1em',
@@ -76,8 +76,7 @@ const CountryCard = ({ country }) => {
                     </Typography>
                 </CardContent>
             </Card>
-        </Grid>
-
+        </Grid >
     )
 }
 
